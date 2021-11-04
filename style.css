@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+body {
+    margin: 0;
+    width: 100vw;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 80%;
+    height: 80%;
+    background: pink;
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 2px 2px 18px -5px rgba(0, 0, 0, 0.75);
+    transition: 0.5s;
+}
+
+.card__gif {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("img/background_purple.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card__login {
+    width: 40%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    color: purple;
+}
+
+.subtitle {
+    color: purple;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 85px;
+}
+
+.login {
+    width: 80%;
+    height: 80%;
+    font-weight: bolder;
+}
+
+.text1 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+}
+
+button {
+    width: 60%;
+    height: 40px;
+    margin: auto;
+    background: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 17px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.forget {
+    text-align: end;
+    font-weight: bolder;
+    color: purple;
+}
+
+input {
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid purple;
+    transition: 0.1s;
+    height: 30px;
+}
+
+.sign__in {
+    text-align: center;
+    font-weight: bolder;
+    color: purple;
+}
+
+input:focus,
+input:hover {
+    outline: none;
+    border-bottom: 2px solid purple;
+}
+
+.button:hover,
+img:hover {
+    transform: scale(1.04, 1.04);
+}
+
+img {
+    transition: 0.5s;
+}
+
+@media (max-width: 1440px) {
+    img {
+        width: 60%;
+    }
+
+    .card__gif, .card__login {
+        width: 50%;
+    }
+
+    .gif {
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 950px) {
+    .card {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .card__login {
+        width: 100%;
+        height: 100%;
+        min-width: 80%;
+    }
+
+    .card__gif {
+        display: none;
+    }
+
+
+    .title {
+        font-size: 22px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    button {
+        text-align: center;
+        font-size: 15px;
+        width: 100%;
+        height: 40px;
+        margin-bottom: 20px;
+        margin-top: 21px;
+    }
+
+    .forget {
+        font-size: 12px;
+    }
+}
